@@ -370,5 +370,108 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "address": "Av. Gonçalo Madeia",
+      "number": "401",
+      "optional": "",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "capp"
+        },
+        {
+          "quantity": 1,
+          "menuId": "starb"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "address": "asdasdasdas",
+      "number": "122",
+      "optional": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "capp"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "dasdasdasdasd",
+      "email": "dasdas@gmail.com",
+      "emailConfirmation": "dasdas@gmail.com",
+      "address": "adasdasda",
+      "number": "123",
+      "optional": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "capp"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "dasdasdasd",
+      "email": "t@gmail.com",
+      "emailConfirmation": "t@gmail.com",
+      "address": "asdasdasdas",
+      "number": "123",
+      "optional": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "sunday"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "Adriano Lourenço",
+      "email": "adriano.psa@gmail.com",
+      "emailConfirmation": "adriano.psa@gmail.com",
+      "address": "Rua Pedro Rodrigues Pereira",
+      "number": "36",
+      "optional": "casa 3",
+      "paymentOption": "DEB",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantity": 1,
+          "menuId": "donut"
+        },
+        {
+          "quantity": 1,
+          "menuId": "bread"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "asdasdas",
+      "email": "a@com.br",
+      "emailConfirmation": "a@com.br",
+      "address": "dsasdasda",
+      "number": "12",
+      "optional": "",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "sunday"
+        }
+      ],
+      "id": 6
+    }
+  ]
 }
