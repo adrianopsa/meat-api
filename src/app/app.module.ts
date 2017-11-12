@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule , LOCALE_ID   } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
 
 
 import { SharedModule } from './shared/shared.module';
@@ -20,7 +22,7 @@ import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.compo
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { LocationStrategy, HashLocationStrategy } from '@angular/common'
+import { LoginComponent } from './security/login/login.component';
 
 @NgModule({
   declarations: [
@@ -36,17 +38,18 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common'
     ReviewsComponent,
     OrderSummaryComponent,
     NotFoundComponent,
-   
+    LoginComponent
+
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpModule,
+    HttpClientModule,
     SharedModule.forRoot(),
     RouterModule.forRoot(ROUTES,{preloadingStrategy: PreloadAllModules})
   ],
   providers: [
-      { provide:LocationStrategy, useClass:HashLocationStrategy},
+      //{ provide:LocationStrategy, useClass:HashLocationStrategy},
       { provide: LOCALE_ID , useValue:'pt-BR'}
   ],
   bootstrap: [AppComponent]
