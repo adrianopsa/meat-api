@@ -26,22 +26,23 @@ import 'rxjs/add/operator/switchMap'
       transition('visible => hidden',animate('500ms 0s ease-out'))
     ])
   ]
-
-
-
 })
+
+
 export class SnackbarComponent implements OnInit {
 
   message: string
   snackVisibility: string = 'hidden'
+
   constructor(private notificationService: NotificationService) { }
 
   ngOnInit() {
-      this.notificationService.notifier.do(message=>{
-      this.message = message 
-      this.snackVisibility = 'visible'      
-    }).switchMap(message=> Observable.timer(3000))
-    .subscribe(timer=> this.snackVisibility ='hidden')
+      this.notificationService.notifier
+      .do(message=>{
+          this.message = message
+          this.snackVisibility = 'visible'
+      }).switchMap(message=> Observable.timer(3000))
+      .subscribe(timer=> this.snackVisibility ='hidden')
   }
 
 
