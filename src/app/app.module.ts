@@ -6,9 +6,7 @@ import { RouterModule, PreloadAllModules } from '@angular/router';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 
-
 import { SharedModule } from './shared/shared.module';
-
 import { ROUTES } from './app.routes'
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -23,6 +21,7 @@ import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LoginComponent } from './security/login/login.component';
+import { UserDetailComponent } from './header/user-detail/user-detail.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +37,8 @@ import { LoginComponent } from './security/login/login.component';
     ReviewsComponent,
     OrderSummaryComponent,
     NotFoundComponent,
-    LoginComponent
+    LoginComponent,
+    UserDetailComponent
 
   ],
   imports: [

@@ -2,6 +2,10 @@ import { HttpErrorResponse } from '@angular/common/http'
 import { Observable} from 'rxjs/Observable'
 
 export class ErrorHandler {
+  
+  
+  
+  
   static handleError(error: HttpErrorResponse | any) {
     let errorMessage: string
 

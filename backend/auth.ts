@@ -6,7 +6,7 @@ import { apiConfig} from './api-config'
 
 export const handleAuthentication = (req: Request, resp: Response)=> {
 
-  const user = req.body
+  const user: User = req.body
 
   if(isValid(user)){
       const dbUser: User = users[user.email]

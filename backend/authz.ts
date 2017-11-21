@@ -20,7 +20,7 @@ export const handleAuthorization = (req:Request , resp: Response, next) => {
   }
 }
 
-function extractToken(req): string {
+function extractToken(req: Request): string {
   let token = undefined
 
   if(req.headers && req.headers.authorization) {
